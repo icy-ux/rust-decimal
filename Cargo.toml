@@ -34,7 +34,7 @@ diesel2 = { default-features = false, optional = true, package = "diesel", versi
 num-traits = { default-features = false, features = ["i128"], version = "0.2" }
 postgres = { default-features = false, optional = true, version = "0.19" }
 rand = { default-features = false, optional = true, version = "0.8" }
-rkyv = { default-features = false, features = ["size_32", "std"], optional = true, version = "0.7" }
+rkyv = { optional = true, version = "0.7", default-features = false, features = ["size_64", "std"]}
 rocket = { default-features = false, optional = true, version = "0.5.0-rc.1" }
 serde = { default-features = false, optional = true, version = "1.0" }
 serde_json = { default-features = false, optional = true, version = "1.0" }
