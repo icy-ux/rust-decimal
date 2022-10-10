@@ -141,15 +141,15 @@ Enables the tokio postgres module allowing for async communication with PostgreS
 
 ### `db-diesel-postgres`
 
-Enable `diesel` PostgreSQL support. By default, this enables version `1.4` of `diesel`. If you wish to use the `diesel`
-release candidates then you can do so by using `db-diesel2-postgres`. Please note, the `db-diesel2-*` features are considered
-unstable and will be upgraded as and when new `diesel 2.x` features are released.
+Enable `diesel` PostgreSQL support. By default, this enables version `1.4` of `diesel`. If you wish to use the `2.0` 
+version of `diesel` then you can do so by using the feature `db-diesel2-postgres`. Please note, if both features are 
+enabled then version 2 will supersede version 1.
 
 ### `db-diesel-mysql`
 
-Enable `diesel` MySQL support. By default, this enables version `1.4` of `diesel`. If you wish to use the `diesel`
-release candidates then you can do so by using `db-diesel2-mysql`. Please note, the `db-diesel2-*` features are considered
-unstable and will be upgraded as and when new `diesel 2.x` features are released.
+Enable `diesel` MySQL support. By default, this enables version `1.4` of `diesel`. If you wish to use the `2.0` 
+version of `diesel` then you can do so by using the feature `db-diesel2-mysql`. Please note, if both features are
+enabled then version 2 will supersede version 1.
 
 ### `legacy-ops`
 
@@ -294,8 +294,8 @@ Please refer to the [Build document](BUILD.md) for more information on building 
 
 ## Minimum Rust Compiler Version
 
-The current _minimum_ compiler version is [`1.56.0`](https://github.com/rust-lang/rust/blob/master/RELEASES.md#version-1560-2021-10-21)
-which was released on `2021-10-21`.
+The current _minimum_ compiler version is [`1.60.0`](https://github.com/rust-lang/rust/blob/master/RELEASES.md#version-1600-2022-04-07)
+which was released on `2022-04-07`.
 
 This library maintains support for rust compiler versions that are 4 minor versions away from the current stable rust compiler version.
 For example, if the current stable compiler version is `1.50.0` then we will guarantee support up to and including `1.46.0`.
